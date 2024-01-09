@@ -10,7 +10,7 @@ Objetivo del proyecto.-
 El objetivo de la práctica es la familiarización del estudiante con conceptos de containerización, y programación asociada a los contenedores. Para ello, el alumno puede elegir entre varias tareas de las señaladas en el documento identificado como "Práctica Evaluada: Docker" que fue entregado en clase; y completar, de manera independiente, aquellas que sean de su interés.
 El alumno puede partir de la infraestructura elaborada en clase, especificada en los documentos identificados como "Tutorial 3 - Dockerfile - Creación de imágenes de Docker" y "Práctica Docker Compose".
 
-Para la elaboración del presente proyecto se eligieron los siguientes objetivos: 
+Para la elaboración del presente proyecto se eligieron las siguientes tareas: 
 1.- Utilización de Git y GitHub para el control de versiones.
 2.- Elaboración de un esquema de datos más complejo en MySQL que el revisado en el documento "Práctica Docker Compose", que incluya más tablas, más datos por tabla y relaciones entre ellas. También se añade la modificación de los scripts de inserción para que estos incluyan más datos en la base de datos. La inserción se podrá llevar a cabo desde la terminal o desde la aplicación web, con confirmación de culminación de la tarea respectiva en la misma aplicación.
 3.- Modificación de la página web para que también incluya hojas de estilo CSS, código Javascript simple y algún contenido dinámico en Javascript. Además, de cara a servir el código, adicionalmente, modificación del servidor de Flask en Python para que pueda servir estas hojas de estilo CSS y Javascript. Esto cubriría los objetivos planteados en las secciones 3 y 3(a).
