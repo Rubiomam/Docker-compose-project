@@ -1,0 +1,36 @@
+# Primera etapa: builder
+# Utilizamos la imagen base oficial de Go para compilar nuestra aplicación
+FROM golang:latest AS builder
+
+# Establecemos el directorio de trabajo en el contenedor
+WORKDIR /app
+
+# Copiamos go.mod y go.sum y descargamos las dependencias
+COPY go.mod go.sum ./
+RUN go mod download
+
+# Copiamos los archivos de código fuente de la aplicación al contenedor
+COPY . .
+
+# Compilamos la aplicación.
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app server.go
+
+
+
+# Segunda etapa: Creamos una imagen ligera desde cero
+FROM scratch
+
+# Copiamos el ejecutable desde la primera etapa
+COPY --from=builder /app/app /app
+
+# Copiamos las plantillas desde la primera etapa
+COPY --from=builder /app/templates /templates
+
+# Copiamos stylesheets y scripts desdde la primera etapa
+COPY --from=builder /app/static /static
+
+# Exponemos el puerto que usará la aplicación
+EXPOSE 8080
+
+# Comando para ejecutar la aplicación
+CMD ["./app"]
