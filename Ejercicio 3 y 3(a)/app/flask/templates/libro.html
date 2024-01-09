@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Libro</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Registro de Libro</h1>
+        <form method="POST" action="/libro">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+            <br>
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" name="autor" required>
+            <br>
+            <input type="submit" value="Registrar Libro">
+        </form>
+    </div>
+</body>
+</html>
