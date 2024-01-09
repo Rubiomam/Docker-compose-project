@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Préstamo</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Registro de Préstamo</h1>
+        <form method="POST" action="/prestamo">
+            <label for="usuario_id">ID Usuario:</label>
+            <input type="number" id="usuario_id" name="usuario_id" required>
+            <br>
+            <label for="libro_id">ID Libro:</label>
+            <input type="number" id="libro_id" name="libro_id" required>
+            <br>
+            <label for="fecha_prestamo">Fecha de Préstamo:</label>
+            <input type="date" id="fecha_prestamo" name="fecha_prestamo" required>
+            <br>
+            <input type="submit" value="Registrar Préstamo">
+        </form>
+    </div>
+</body>
+</html>
