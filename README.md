@@ -1,2 +1,20 @@
 # Docker-compose-project
- Docker compose project
+Definición.- 
+La containerización se define como una metodología de implementación de software que implica el empaquetado del código y sus dependencias en unidades estandarizadas conocidas como contenedores. Estos contenedores permiten que las aplicaciones se ejecuten de manera eficiente y coherente en diversos entornos informáticos. A diferencia de la virtualización tradicional, que requiere máquinas virtuales (VM) con sistemas operativos completos, la containerización opera a nivel del sistema operativo (SO), compartiendo recursos del SO anfitrión y evitando la sobrecarga de iniciar una VM completa para cada aplicación.
+
+Ventajas y Aplicaciones.- 
+La containerización ofrece múltiples beneficios, entre los que destacan una implementación más rápida, reducción de gastos generales, y una migración simplificada. Esta metodología es fundamental para el desarrollo de aplicaciones nativas en la nube y para la arquitectura de microservicios, donde servicios pequeños y autónomos se conectan para formar aplicaciones más complejas. Los contenedores facilitan el desarrollo, la implementación y el ajuste independiente de estos microservicios, proporcionando un entorno óptimo para un desarrollo de software ágil y libre de errores.
+Además, la flexibilidad de los contenedores para moverse entre diferentes entornos en la nube y su capacidad para escalar sin necesidad de reescribir aplicaciones o realizar cambios significativos de configuración, los convierte en una herramienta indispensable en la actualidad.
+
+Objetivo del proyecto.- 
+El objetivo de la práctica es la familiarización del estudiante con conceptos de containerización, y programación asociada a los contenedores. Para ello, el alumno puede elegir entre varias tareas de las señaladas en el documento identificado como "Práctica Evaluada: Docker" que fue entregado en clase; y completar, de manera independiente, aquellas que sean de su interés.
+El alumno puede partir de la infraestructura elaborada en clase, especificada en los documentos identificados como "Tutorial 3 - Dockerfile - Creación de imágenes de Docker" y "Práctica Docker Compose".
+
+Para la elaboración del presente proyecto se eligieron las siguientes tareas: 
+1.- Utilización de Git y GitHub para el control de versiones.
+2.- Elaboración de un esquema de datos más complejo en MySQL que el revisado en el documento "Práctica Docker Compose", que incluya más tablas, más datos por tabla y relaciones entre ellas. También se añade la modificación de los scripts de inserción para que estos incluyan más datos en la base de datos. La inserción se podrá llevar a cabo desde la terminal o desde la aplicación web, con confirmación de culminación de la tarea respectiva en la misma aplicación.
+3.- Modificación de la página web para que también incluya hojas de estilo CSS, código Javascript simple y algún contenido dinámico en Javascript. Además, se añade la modificación del servidor de Flask en Python para que pueda servir estas hojas de estilo CSS y Javascript. Esto cubriría las tareas planteadas en las secciones 3 y 3(a).
+4.- A partir de la construcción anterior, utilización de un servidor Node.js con la imagen apropiada de Docker y modificación de todos los componentes necesarios, de manera que la base de datos siga funcionando de la misma manera. Esto cubriría las tareas planteadas en la sección 3(b).
+5.- Modificación del lenguaje de programación del cliente para que el envío de las peticiones sea más eficiente. Utilización del lenguaje de programación compilado Golang. Elaboración de un sistema ‘multi-stage build’, de manera que la imagen de cliente sea mínima en su tamaño. Utilización de imágenes preexistentes como base. Esto cubriría las tareas planteadas en las secciones 4, 4(a) y 4(b).
+6.- Modificación de la imagen de la base de datos y utilización de PostgreSQL. Modificación de todos los componentes necesarios, de manera que la base de datos siga funcionando de la misma manera.
+7.- Elaboración de la memoria completa del proyecto, en la cual se se detallará cada uno de los objetivos elegidos, su realización, y los cambios necesarios acorde con las necesidades en la infraestructura de Docker, Docker Compose y Dockerfile.
